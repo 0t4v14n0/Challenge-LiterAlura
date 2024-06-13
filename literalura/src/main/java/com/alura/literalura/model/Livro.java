@@ -83,6 +83,7 @@ public class Livro {
         return  "\n-------------- LIVRO ------------- \n"
                 + " Titulo: " + titulo + "\n"
                 + " Idioma: " + idioma + "\n"
+                + " Autor: " + autor.getNome() + "\n"
                 + " Numero de downloads: " + download + "\n"
                 + "--------------------------------- ";
     }

@@ -65,10 +65,10 @@ public class Principal {
             	buscaLivro();
             	break;
             case 2:
-            	//listarLivros();
+            	listarLivros();
             	break;
             case 3:
-            	//listarAutores();
+            	listarAutores();
             	break;
             case 4:
             	break;
@@ -80,6 +80,22 @@ public class Principal {
             }
         	
         }while(opcao != 0);
+		
+	}
+
+	private void listarAutores() {
+		
+		List<Autor> autores = repositorio.findAll();
+		
+		autores.stream().forEach(System.out::println);
+		
+	}
+
+	private void listarLivros() {
+		
+		List<Livro> livros = repositorio.buscarTodosLivros();
+		
+		livros.stream().forEach(System.out::println);
 		
 	}
 

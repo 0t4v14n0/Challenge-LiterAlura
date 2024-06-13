@@ -1,5 +1,6 @@
 package com.alura.literalura.repository;
 
+import java.util.List;
 import java.util.Optional;
 
 import org.springframework.data.jpa.repository.JpaRepository;
@@ -18,6 +19,9 @@ public interface AutorRepository extends JpaRepository<Autor, Long> {
 	
 	@Query("SELECT l FROM Livro l JOIN l.autor a WHERE l.titulo LIKE %:nome%")
     Optional<Livro> buscarLivroPorNome(@Param("nome") String titulo);
+	
+	@Query("SELECT l FROM Livro l")
+	List<Livro> buscarTodosLivros();
 	
 }
 
