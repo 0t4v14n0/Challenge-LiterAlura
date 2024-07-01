@@ -44,7 +44,7 @@ Para executar o projeto em seu ambiente local, siga os passos abaixo:
 1. **Clonar o Repositório:**
 
   ```shell
-  git clone https://github.com/seu-usuario/LiteraturaDesafio.git
+  git clone https://github.com/0t4v14n0/LiteraturaDesafio.git
   ```
 
 2. **Configurar o Banco de Dados:**
